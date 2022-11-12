@@ -1,1 +1,1 @@
-web: gunicorn degas.wsgi
+web: gunicorn gettingstarted.wsgi
