@@ -33,14 +33,12 @@ if 'SECRET_KEY' in os.environ:
 
 
 # Generally avoid wildcards(*). However since Heroku router provides hostname validation it is ok
-if IS_HEROKU:
-    ALLOWED_HOSTS = ["*", "web-production-c755.up.railway.app"]
-else:
-    ALLOWED_HOSTS = []
 
-# SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
-    DEBUG = True
+ALLOWED_HOSTS = ["*", "web-production-c755.up.railway.app"]
+
+
+
+DEBUG = False
 
 # Application definition
 
